@@ -51,7 +51,7 @@ def api_user_status(handle, _from, count, timeout=20):
     return j.get("result", [])
 
 # ---------------- Data logic ----------------
-def fetch_submissions_in_period(handle, dt_from, dt_to, page_size=1000, max_requests=100, progress=None):
+def fetch_submissions_in_period(handle, dt_from, dt_to, page_size=300, max_requests=100, progress=None):
     if dt_from and dt_to and dt_from > dt_to:
         raise ValueError("From date must be <= To date")
 
@@ -238,7 +238,7 @@ class CF:
         try:
             def progress(msg):
                 self.set_status(msg)
-            subs_gen = fetch_submissions_in_period(handle, dt_from, dt_to, page_size=1000, max_requests=200, progress=progress)
+            subs_gen = fetch_submissions_in_period(handle, dt_from, dt_to, page_size=300, max_requests=200, progress=progress)
             solved_map = collect_first_ac_per_problem(subs_gen)
 
             tag_counts = {} 

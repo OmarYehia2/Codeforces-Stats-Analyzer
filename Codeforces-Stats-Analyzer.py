@@ -114,7 +114,7 @@ def collect_first_ac_per_problem(submissions_iter):
     return solved
 
 # ---------------- GUI ----------------
-class CFGuiPeriod:
+class CF:
     def __init__(self, root):
         self.root = root
         root.title("Codeforces Tags by Period")
@@ -388,7 +388,7 @@ class CFGuiPeriod:
 
 def main():
     root = tk.Tk()
-    app = CFGuiPeriod(root)
+    app = CF(root)
     root.mainloop()
 
 if __name__ == "__main__":

@@ -24,19 +24,26 @@ It provides insights into solved problems by **tags** and **ratings**, including
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/YOUR-USERNAME/codeforces-stats-analyzer.git
-   cd codeforces-stats-analyzer
+   git clone https://github.com/OmarYehia2/Codeforces-Stats-Analyzer.git
+   cd Codeforces-Stats-Analyzer
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
 
 3. Run the program:
    ```bash
-   python cf_stats_analyzer.py
+   python Codeforces-Stats-Analyzer.py
 
 ## 📚 Use Cases
 - Track your progress in competitive programming 
 - Identify which tags you solve most (or least) 
 - Monitor problem difficulty trends over time 
 - Plan targeted practice based on weak areas
-  
+
+## 📸 Screenshots  
+
+
+Here’s a preview of the Analyzer:
+
+![Stock Market Analyzer Screenshot](assets/Screenshot_1.png)
+

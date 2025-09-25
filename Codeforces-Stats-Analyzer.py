@@ -50,7 +50,7 @@ def api_user_status(handle, _from, count, timeout=20):
         raise RuntimeError(f"Codeforces API error: {j.get('comment', j)}")
     return j.get("result", [])
 
-# ---------------- Data logic ----------------
+# ---------------- Data logic ---------------
 def fetch_submissions_in_period(handle, dt_from, dt_to, page_size=300, max_requests=100, progress=None):
     if dt_from and dt_to and dt_from > dt_to:
         raise ValueError("From date must be <= To date")
